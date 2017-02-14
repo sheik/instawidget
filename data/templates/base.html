@@ -1,0 +1,22 @@
+{{define "base"}}
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{{.Title}} &bull; sudosu.me</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+            body {
+                padding: 0;
+            }
+        </style>
+	{{template "head" .}}
+    </head>
+    <body>
+		<div class="container">
+			{{template "body" .}}
+	    </div>
+    </body>
+</html>{{end}}
